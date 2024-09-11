@@ -1,38 +1,47 @@
-.App {
+.pagination-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#table-m{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pagination-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pagination-table th, .pagination-table td {
+  border: 1px solid #c5dbc5;
+  padding: 8px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagination-table th {
+  background-color: #0f780d;
+}
+
+.pagination-controls {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-controls span {
+  font-size: 16px;
 }
