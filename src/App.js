@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Import the CSS file
+import './App.css'; 
 
 const Pagination = () => {
   const [data, setData] = useState([]);
